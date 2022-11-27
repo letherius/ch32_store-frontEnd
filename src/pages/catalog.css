@@ -1,0 +1,12 @@
+.catalog h1 {
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 20px;
+  color: black;
+}
+
+.catalog h4 {
+  text-align: center;
+  color: dodgerblue;
+  margin-bottom: 30px;
+}
