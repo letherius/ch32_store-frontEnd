@@ -1,7 +1,16 @@
 import "./product.css";
 import QuantityPicker from "./quantityPicker";
+import dataContext from "../state/dataContext";
+import { useContext } from "react";
 
 function Product(props) {
+    const addProd = useContext(dataContext).addProductToCart;
+
+    const handleAdd = () => {
+    // call the context function
+    addProd(props.data);
+    };
+
     return (
         <div className="product">
 
@@ -16,7 +25,7 @@ function Product(props) {
 
             <QuantityPicker />
 
-            <button className="btn btn-info">Add</button>
+            <button onClick={handleAdd} className="btn btn-info">Add</button>
         </div>
 
     );
