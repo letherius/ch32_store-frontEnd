@@ -1,0 +1,19 @@
+.cart-product {
+  background-color: #fff;
+  border: 1px solid #efefef;
+  border-bottom: 10px;
+  padding: 10px;
+  display: flex;
+}
+
+.cart-product img {
+  width: 120px;
+}
+
+.cart-product .description {
+  flex: 4;
+}
+
+.cart-product label {
+  flex: 1;
+}
